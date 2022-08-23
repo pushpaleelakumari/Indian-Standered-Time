@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: black url(https://www.teahub.io/photos/full/80-804862_colorful-water-drops-hd-wallpaper-pink-water-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock{
+    width: 40rem;
+    height: 40rem;
+    border: 6px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+        0 0 0 4px rgba(0, 0, 0, 0.1)
+        inset 0 0 0 3px #efefef
+        inset 0 0 10px black
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+.clock .number{
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+
+}
+.clock .number1{
+    --rotation: 30deg;
+    font-size: 30px;
+}
+.clock .number2{
+    --rotation: 60deg;
+    font-size: 30px;
+}
+.clock .number3{
+    --rotation: 90deg;
+    font-size: 30px;
+}
+.clock .number4{
+    --rotation: 120deg;
+    font-size: 30px;
+}
+.clock .number5{
+    --rotation: 150deg;
+    font-size: 30px;
+}
+.clock .number6{
+    --rotation: 180deg;
+    font-size: 30px;
+}
+.clock .number7{
+    --rotation: 210deg;
+    font-size: 30px;
+}
+.clock .number8{
+    --rotation: 240deg;
+    font-size: 30px;
+}
+.clock .number9{
+    --rotation: 270deg;
+    font-size: 30px;
+}
+.clock .number10{
+    --rotation: 300deg;
+    font-size: 30px;
+}
+.clock .number11{
+    --rotation: 330deg;
+    font-size: 30px;
+}
+.clock .number12{
+    font-size: 30px;
+}
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.clock .hand{
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); 
+
+}
+.class-face .hour-hand{
+    /* width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 40%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+    position: absolute;
+    /* width: 20% !important; */
+    height: 4px !important;
+    background: black !important;
+}
+.min-hand{
+    width: 50% !important;
+    height: 4px !important;
+    background: rgba(0, 0, 0, 0.563) !important;
+}
+.sec-hand{
+    /* width: 50%;
+    height: 2px !important;
+    background: rgba(205, 13, 51, 0.941) !important;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+    width: 50% !important;
+    height: 2px !important;
+    background: red !important;
+}
